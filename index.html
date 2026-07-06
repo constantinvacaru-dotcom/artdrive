@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ArtDrive.MD — Îndreptare & Vopsire Auto | Chișinău</title>
+  <meta name="description" content="ArtDrive.MD — atelier auto de tinichigerie și vopsitorie. Îndreptare caroserie, vopsire, polisare, potrivire exactă a culorii. Calitate garantată, termen respectat." />
+  <meta name="theme-color" content="#0a0a0a" />
+
+  <!-- Open Graph / social preview -->
+  <meta property="og:title" content="ArtDrive.MD — Îndreptare & Vopsire Auto" />
+  <meta property="og:description" content="Îndreptare caroserie, vopsire, polisare. Calitate garantată, termen respectat." />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+</head>
+<body>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="site-header" id="header">
+    <div class="container header-inner">
+      <a href="#hero" class="brand" aria-label="ArtDrive.MD">
+        <!-- Inline logo: car silhouette + wordmark -->
+        <svg class="brand-mark" viewBox="0 0 120 60" aria-hidden="true">
+          <path d="M8 42 C20 30 34 26 50 26 C60 20 74 16 90 22 L112 26 C116 27 116 33 110 34 L96 36 C94 42 88 46 82 46 C76 46 71 42 70 37 L44 37 C43 42 38 46 32 46 C26 46 21 42 20 37 L10 37 C6 37 5 44 8 42 Z" fill="url(#carGrad)"/>
+          <circle cx="32" cy="42" r="7" fill="#0a0a0a" stroke="#fff" stroke-width="2.5"/>
+          <circle cx="82" cy="42" r="7" fill="#0a0a0a" stroke="#fff" stroke-width="2.5"/>
+          <rect x="6" y="49" width="108" height="2.5" rx="1.25" fill="#fff"/>
+          <defs>
+            <linearGradient id="carGrad" x1="0" y1="0" x2="120" y2="0">
+              <stop offset="0%" stop-color="#8c1218"/>
+              <stop offset="60%" stop-color="#e01e2b"/>
+              <stop offset="100%" stop-color="#ff5a63"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        <span class="brand-text">ART<span class="brand-accent">DRIVE</span><span class="brand-md">.MD</span></span>
+      </a>
+
+      <nav class="nav" id="nav">
+        <a href="#services" data-i18n="nav_services">Servicii</a>
+        <a href="#gallery" data-i18n="nav_gallery">Galerie</a>
+        <a href="#why" data-i18n="nav_why">De ce noi</a>
+        <a href="#contact" data-i18n="nav_contact">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <div class="lang-switch" role="group" aria-label="Language">
+          <button class="lang-btn active" data-lang="ro">RO</button>
+          <button class="lang-btn" data-lang="ru">RU</button>
+        </div>
+        <a href="tel:+37368171799" class="btn btn-phone">
+          <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.3 21 3 13.7 3 4.5c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .7-.2 1l-2.3 2.2z"/></svg>
+          <span>068 171 799</span>
+        </a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Meniu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="container hero-inner">
+      <div class="hero-badge" data-i18n="hero_badge">★ Calitate garantată · Termen respectat</div>
+      <h1 class="hero-title">
+        <span data-i18n="hero_title_1">Îndreptare și vopsire auto</span><br>
+        <span class="accent" data-i18n="hero_title_2">la standard premium</span>
+      </h1>
+      <p class="hero-sub" data-i18n="hero_sub">Redăm mașinii tale aspectul de showroom — tinichigerie, vopsire și polisare cu potrivire exactă a culorii.</p>
+      <div class="hero-cta">
+        <a href="#contact" class="btn btn-primary" data-i18n="hero_cta_1">Cere ofertă gratuită</a>
+        <a href="#gallery" class="btn btn-ghost" data-i18n="hero_cta_2">Vezi lucrările</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><strong>500+</strong><span data-i18n="stat_1">Mașini reparate</span></div>
+        <div class="stat"><strong>100%</strong><span data-i18n="stat_2">Potrivire culoare</span></div>
+        <div class="stat"><strong>800+</strong><span data-i18n="stat_3">Clienți în social media</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SERVICES ===================== -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow" data-i18n="services_eyebrow">Ce facem</span>
+        <h2 data-i18n="services_title">Serviciile noastre</h2>
+        <p data-i18n="services_sub">Soluții complete pentru caroseria mașinii tale, într-un singur loc.</p>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M14 6l4 4-9.5 9.5-4 .5.5-4L14 6zm2-2l1.6-1.6a2 2 0 012.8 0l1.2 1.2a2 2 0 010 2.8L20 8l-4-4z"/></svg>
+          </div>
+          <h3 data-i18n="serv1_t">Îndreptare caroserie</h3>
+          <p data-i18n="serv1_d">Reparăm lovituri, îndoituri și deformări, readucem tabla la forma originală, fără urme.</p>
+        </article>
+        <article class="card">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M7 3h7l1 2h3a2 2 0 012 2v3l-2 1v7a2 2 0 01-2 2H7a2 2 0 01-2-2V7a2 2 0 012-2h0V3zm0 6v9h9V9H7z"/></svg>
+          </div>
+          <h3 data-i18n="serv2_t">Vopsire auto</h3>
+          <p data-i18n="serv2_d">Vopsire profesională în cabină, de la un element până la mașina completă, cu finisaj impecabil.</p>
+        </article>
+        <article class="card">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 100 20 10 10 0 000-20zm0 4a6 6 0 016 6h-2a4 4 0 00-4-4V6z"/></svg>
+          </div>
+          <h3 data-i18n="serv3_t">Polisare & luciu</h3>
+          <p data-i18n="serv3_d">Îndepărtăm zgârieturile fine și redăm luciul profund al vopselei, ca de fabrică.</p>
+        </article>
+        <article class="card">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4L12 14.8 7.2 17l.9-5.4L4.2 7.7l5.4-.8L12 2z"/></svg>
+          </div>
+          <h3 data-i18n="serv4_t">Potrivire exactă a culorii</h3>
+          <p data-i18n="serv4_d">Identificăm codul de culoare și amestecăm nuanța perfectă, invizibilă la îmbinări.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== GALLERY ===================== -->
+  <section class="section section-alt" id="gallery">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow" data-i18n="gallery_eyebrow">Portofoliu</span>
+        <h2 data-i18n="gallery_title">Lucrările noastre</h2>
+        <p data-i18n="gallery_sub">Rezultate reale din atelier. Apasă pe o imagine pentru a o mări.</p>
+      </div>
+      <div class="gallery-grid" id="galleryGrid">
+        <!-- Slots: drop real photos in /gallery as 1.jpg ... 8.jpg -->
+        <button class="gallery-item" data-src="gallery/1.jpg"><img src="gallery/1.jpg" alt="Lucrare ArtDrive 1" loading="lazy"></button>
+        <button class="gallery-item" data-src="gallery/2.jpg"><img src="gallery/2.jpg" alt="Lucrare ArtDrive 2" loading="lazy"></button>
+        <button class="gallery-item" data-src="gallery/3.jpg"><img src="gallery/3.jpg" alt="Lucrare ArtDrive 3" loading="lazy"></button>
+        <button class="gallery-item" data-src="gallery/4.jpg"><img src="gallery/4.jpg" alt="Lucrare ArtDrive 4" loading="lazy"></button>
+        <button class="gallery-item" data-src="gallery/5.jpg"><img src="gallery/5.jpg" alt="Lucrare ArtDrive 5" loading="lazy"></button>
+        <button class="gallery-item" data-src="gallery/6.jpg"><img src="gallery/6.jpg" alt="Lucrare ArtDrive 6" loading="lazy"></button>
+      </div>
+      <div class="gallery-cta">
+        <a href="https://www.instagram.com/artdrive.md" target="_blank" rel="noopener" class="btn btn-ghost">
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 2c2.7 0 3 0 4.1.1 1 0 1.7.2 2.3.5.6.2 1 .5 1.5 1s.8.9 1 1.5c.3.6.4 1.3.5 2.3.1 1.1.1 1.4.1 4.1s0 3-.1 4.1c0 1-.2 1.7-.5 2.3-.2.6-.5 1-.99 1.5s-.9.8-1.5 1c-.6.3-1.3.4-2.3.5-1.1.1-1.4.1-4.1.1s-3 0-4.1-.1c-1 0-1.7-.2-2.3-.5-.6-.2-1-.5-1.5-1s-.8-.9-1-1.5c-.3-.6-.4-1.3-.5-2.3C2 15 2 14.7 2 12s0-3 .1-4.1c0-1 .2-1.7.5-2.3.2-.6.5-1 1-1.5s.9-.8 1.5-1c.6-.3 1.3-.4 2.3-.5C8.5 2 8.8 2 12 2zm0 5a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6zm5.3-3.1a1.2 1.2 0 100 2.4 1.2 1.2 0 000-2.4z"/></svg>
+          <span data-i18n="gallery_more">Mai multe pe Instagram</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== WHY US ===================== -->
+  <section class="section" id="why">
+    <div class="container why-inner">
+      <div class="why-text">
+        <span class="eyebrow" data-i18n="why_eyebrow">De ce ArtDrive</span>
+        <h2 data-i18n="why_title">De ce ne aleg clienții</h2>
+        <ul class="why-list">
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M9 16.2l-3.5-3.5L4 14.2 9 19.2 20 8.2l-1.5-1.5z"/></svg>
+            <div><strong data-i18n="why1_t">Calitate garantată</strong><span data-i18n="why1_d">Stăm în spatele fiecărei lucrări. Rezultatul trebuie să arate perfect.</span></div>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M9 16.2l-3.5-3.5L4 14.2 9 19.2 20 8.2l-1.5-1.5z"/></svg>
+            <div><strong data-i18n="why2_t">Termen respectat</strong><span data-i18n="why2_d">Îți spunem exact când e gata mașina — și ne ținem de cuvânt.</span></div>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M9 16.2l-3.5-3.5L4 14.2 9 19.2 20 8.2l-1.5-1.5z"/></svg>
+            <div><strong data-i18n="why3_t">Potrivire perfectă a culorii</strong><span data-i18n="why3_d">Tehnologie de amestecare a vopselei pentru o nuanță identică.</span></div>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M9 16.2l-3.5-3.5L4 14.2 9 19.2 20 8.2l-1.5-1.5z"/></svg>
+            <div><strong data-i18n="why4_t">Preț corect, transparent</strong><span data-i18n="why4_d">Ofertă clară înainte de a începe lucrul, fără costuri ascunse.</span></div>
+          </li>
+        </ul>
+      </div>
+      <div class="why-highlight">
+        <div class="highlight-num">10<span>+</span></div>
+        <p data-i18n="why_years">ani de experiență în tinichigerie și vopsitorie auto</p>
+        <a href="#contact" class="btn btn-primary" data-i18n="why_cta">Programează-te acum</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section class="section section-alt" id="contact">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow" data-i18n="contact_eyebrow">Contact</span>
+        <h2 data-i18n="contact_title">Cere o ofertă</h2>
+        <p data-i18n="contact_sub">Descrie-ne problema mașinii tale și te contactăm cu un preț. Sau sună-ne direct.</p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- FORM -->
+        <form class="quote-form" id="quoteForm" action="https://formsubmit.co/CHANGE_ME@example.com" method="POST">
+          <!-- FormSubmit config -->
+          <input type="hidden" name="_subject" value="Cerere ofertă — ArtDrive.MD">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+
+          <div class="field">
+            <label for="name" data-i18n="form_name">Nume</label>
+            <input type="text" id="name" name="Nume" required>
+          </div>
+          <div class="field">
+            <label for="phone" data-i18n="form_phone">Telefon</label>
+            <input type="tel" id="phone" name="Telefon" required>
+          </div>
+          <div class="field">
+            <label for="service" data-i18n="form_service">Serviciu dorit</label>
+            <select id="service" name="Serviciu">
+              <option data-i18n="form_opt1">Îndreptare caroserie</option>
+              <option data-i18n="form_opt2">Vopsire auto</option>
+              <option data-i18n="form_opt3">Polisare</option>
+              <option data-i18n="form_opt4">Altceva / nu știu sigur</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="message" data-i18n="form_msg">Descrie problema</label>
+            <textarea id="message" name="Mesaj" rows="4"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block" data-i18n="form_submit">Trimite cererea</button>
+          <p class="form-note" data-i18n="form_note">Îți răspundem de obicei în aceeași zi.</p>
+        </form>
+
+        <!-- CONTACT INFO -->
+        <div class="contact-info">
+          <a href="tel:+37368171799" class="contact-line">
+            <span class="ci-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.3 21 3 13.7 3 4.5c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .7-.2 1l-2.3 2.2z"/></svg></span>
+            <span><small data-i18n="ci_phone">Telefon</small>068 171 799</span>
+          </a>
+          <a href="https://wa.me/37368171799" target="_blank" rel="noopener" class="contact-line">
+            <span class="ci-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 00-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1012 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.6-.1-.4-.1-.9-.3-1.5-.6-2.7-1.2-4.4-3.9-4.6-4.1-.1-.2-1-1.4-1-2.6 0-1.2.6-1.8.9-2.1.2-.2.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.7 1.8c.1.2.1.3 0 .5l-.4.6c-.2.2-.3.4-.1.7.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.2.1.4.1.6-.1l.7-.9c.2-.2.4-.2.6-.1l1.7.8c.2.1.4.2.4.3.1.2.1.6-.1 1.1z"/></svg></span>
+            <span><small>WhatsApp</small>068 171 799</span>
+          </a>
+          <a href="https://www.instagram.com/artdrive.md" target="_blank" rel="noopener" class="contact-line">
+            <span class="ci-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2c2.7 0 3 0 4.1.1 1 0 1.7.2 2.3.5.6.2 1 .5 1.5 1s.8.9 1 1.5c.3.6.4 1.3.5 2.3.1 1.1.1 1.4.1 4.1s0 3-.1 4.1c0 1-.2 1.7-.5 2.3-.2.6-.5 1-.99 1.5s-.9.8-1.5 1c-.6.3-1.3.4-2.3.5-1.1.1-1.4.1-4.1.1s-3 0-4.1-.1c-1 0-1.7-.2-2.3-.5-.6-.2-1-.5-1.5-1s-.8-.9-1-1.5c-.3-.6-.4-1.3-.5-2.3C2 15 2 14.7 2 12s0-3 .1-4.1c0-1 .2-1.7.5-2.3.2-.6.5-1 1-1.5s.9-.8 1.5-1c.6-.3 1.3-.4 2.3-.5C8.5 2 8.8 2 12 2zm0 5a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6zm5.3-3.1a1.2 1.2 0 100 2.4 1.2 1.2 0 000-2.4z"/></svg></span>
+            <span><small>Instagram</small>@artdrive.md</span>
+          </a>
+          <a href="https://www.facebook.com/artdrive.md" target="_blank" rel="noopener" class="contact-line">
+            <span class="ci-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M13 22v-8h2.7l.4-3H13V9c0-.9.3-1.5 1.6-1.5H16V4.8c-.3 0-1.2-.1-2.2-.1-2.2 0-3.8 1.4-3.8 3.9V11H7.5v3H10v8h3z"/></svg></span>
+            <span><small>Facebook</small>ArtDrive.MD</span>
+          </a>
+          <div class="hours">
+            <strong data-i18n="ci_hours">Program</strong>
+            <span data-i18n="ci_hours_val">Luni – Sâmbătă: 09:00 – 18:00</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- MAP -->
+      <div class="map-wrap">
+        <iframe
+          title="Locație ArtDrive.MD"
+          src="https://www.google.com/maps?q=Chi%C8%99in%C4%83u&output=embed"
+          width="100%" height="320" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="brand">
+        <span class="brand-text">ART<span class="brand-accent">DRIVE</span><span class="brand-md">.MD</span></span>
+      </div>
+      <p class="footer-tag" data-i18n="footer_tag">Îndreptare · Vopsire · Polisare · Chișinău</p>
+      <p class="footer-copy">© <span id="year"></span> ArtDrive.MD. <span data-i18n="footer_rights">Toate drepturile rezervate.</span></p>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/37368171799" class="wa-float" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 00-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1012 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.6-.1-.4-.1-.9-.3-1.5-.6-2.7-1.2-4.4-3.9-4.6-4.1-.1-.2-1-1.4-1-2.6 0-1.2.6-1.8.9-2.1.2-.2.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.7 1.8c.1.2.1.3 0 .5l-.4.6c-.2.2-.3.4-.1.7.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.2.1.4.1.6-.1l.7-.9c.2-.2.4-.2.6-.1l1.7.8c.2.1.4.2.4.3.1.2.1.6-.1 1.1z"/></svg>
+  </a>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" aria-label="Închide">&times;</button>
+    <img src="" alt="" id="lightboxImg">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
