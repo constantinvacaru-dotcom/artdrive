@@ -52,10 +52,10 @@ img { max-width: 100%; display: block; }
 /* ===================== HEADER ===================== */
 .site-header {
   position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-  background: rgba(10,10,10,.75); backdrop-filter: blur(12px);
+  background: #0a0a0a; backdrop-filter: blur(12px);
   border-bottom: 1px solid transparent; transition: border-color .3s, background .3s;
 }
-.site-header.scrolled { border-bottom-color: var(--line); background: rgba(10,10,10,.92); }
+.site-header.scrolled { border-bottom-color: var(--line); background: rgba(10,10,10,.96); }
 .header-inner { display: flex; align-items: center; justify-content: space-between; height: 72px; gap: 20px; }
 .brand { display: flex; align-items: center; gap: 10px; }
 .brand-mark { width: 48px; height: 24px; flex-shrink: 0; }
