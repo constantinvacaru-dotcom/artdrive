@@ -89,11 +89,6 @@ img { max-width: 100%; display: block; }
     radial-gradient(circle at 15% 80%, rgba(224,30,43,.10), transparent 40%),
     linear-gradient(180deg, #0a0a0a 0%, #121214 100%);
 }
-.hero-bg::after {
-  content: ''; position: absolute; inset: 0;
-  background-image: linear-gradient(rgba(255,255,255,.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.03) 1px, transparent 1px);
-  background-size: 54px 54px; mask-image: radial-gradient(circle at 70% 40%, #000, transparent 70%);
-}
 .hero-inner { position: relative; z-index: 1; padding: 60px 22px; display: grid; grid-template-columns: 1.05fr 0.95fr; align-items: center; gap: 40px; }
 .hero-content { max-width: 640px; }
 .hero-badge {
